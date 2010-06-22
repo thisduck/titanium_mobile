@@ -80,7 +80,7 @@ if build_type in ['full', 'android'] and not only_package:
 		target = ""
 		if clean: target = "clean"
 		ant.build(target=target, properties={"build.version": version,
-			"android.sdk": sdk.get_android_sdk(), "android.platform": sdk.get_platform_dir(), "google.apis": sdk.get_google_apis_dir()})
+			"android.sdk": sdk.get_android_sdk(), "android.platform": sdk.get_platform_dir()})
 	finally:
 		os.chdir(d)
 
